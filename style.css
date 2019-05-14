@@ -1,0 +1,83 @@
+body {
+    background-color: black;
+    
+    
+}
+
+body:hover h1 {
+    color: crimson;
+    text-shadow: 2px 2px white;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: 'Lobster', cursive;
+    display: inline-block;
+    text-align: center;
+    letter-spacing: 10px;
+    font-size: 80px;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translatey(-50%);
+    
+}
+
+h1 span {
+    opacity: 0;
+    display: inline-block;
+    transition: 2s;
+    animation: animate 1s linear forwards;
+    margin-top: 20px;
+    text-align: center;
+}
+
+video {
+    object-fit: cover;
+    border: none;
+ 
+   
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+        transform: rotatey(90deg);
+        filter: blur(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: rotatey(0deg);
+        filter: blur(0px);
+    }
+}
+
+.w {
+    animation-delay: 1s;
+}
+
+.e {
+    animation-delay: 1.5s;
+}
+
+.l {
+    animation-delay: 2s;
+}
+
+.c {
+    animation-delay: 2.5s;
+}
+
+.o {
+    animation-delay: 3s;
+}
+
+.m {
+    animation-delay: 3.5s;
+}
+
+.e-2 {
+    animation-delay: 4s;
+}
